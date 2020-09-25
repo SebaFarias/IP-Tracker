@@ -1,3 +1,17 @@
+/********************************* 
+*       Table of Contents
+*       1- General Config
+*       2- Header Elements
+*       3- Info Panel
+*       4- Map
+*       5- Atribution Footer
+*       6- Media Query
+*********************************/
+/********************************
+*
+*       1- General Config
+*
+********************************/
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +21,14 @@ body{
     width: 100vw;
     font-family: 'Rubik', sans-serif;
 }
+/********************************
+*
+*       2- Header Elements
+*
+********************************/
 header{
     position: relative;
-    padding-top: 29px;
+    padding-top: 26px;
     height: 300px;
     background-image: url(./images/pattern-bg.png);
     background-size: cover;
@@ -18,8 +37,7 @@ h1{
     text-align: center;
     font-weight: 500;
     font-size: 26px;
-    line-height: 121%;
-    /* or 39px */
+    line-height: 121%;/* or 39px */
     letter-spacing: -0.008em;
     color: #FFFFFF;
 }
@@ -37,7 +55,7 @@ h1{
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 121%;    /* or 22px */
+    line-height: 121%;/* or 22px */
     letter-spacing: -0.013em;
     cursor: pointer;
 }
@@ -52,6 +70,11 @@ h1{
     cursor: pointer;
     background-color: #959595;
 }
+/********************************
+*
+*       3- Info Panel
+*
+********************************/
 .info{
     position: absolute;
     bottom: -158px;
@@ -80,11 +103,21 @@ h3{
     letter-spacing: -0.00299999em;
     color: #000000;
 }
+/********************************
+*
+*       4- Map
+*
+********************************/
 .map{
     width: 100vw;
     height: 80vh;
     z-index: -1;
 }
+/********************************
+*
+*       5- Atribution Footer
+*
+********************************/
 .attribution { 
     font-size: 1; 
     color: white;
@@ -100,6 +133,11 @@ h3{
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
 }
+/********************************
+*
+*       6- Media Query
+*
+********************************/
 @media (min-width:1115px){
     header{
         height: 279px;
