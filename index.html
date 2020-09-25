@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>IP Address Tracker | Seba Farías</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+</head>
+<body>
+  <header>
+    <h1>IP Address Tracker</h1>
+    <form id="search">
+      <input type="text" class="search-bar" placeholder="Search for any IP address or domain">
+      <button id="search-btn" type="submit">
+        <img src="./images/icon-arrow.svg" alt="icon arrow">
+      </button>
+    </form>  
+    <section class="info">
+      <div class="data">
+        <h2>IP Address</h2>
+        <h3>-</h3>
+      </div>
+      <div class="data">
+        <h2>Location</h2>
+        <h3>-</h3>
+      </div>
+      <div class="data">
+        <h2>Timezone</h2>
+        <h3>UTC</h3>
+      </div>
+      <div class="data">
+        <h2>ISP</h2>
+        <h3>-</h3>
+      </div> 
+    </section>
+  </header>
+  <main class="map" id="mapid">
+
+  </main>  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/SebaFarias" target="_blank">Seba Farías</a>.
+  </div>
+  <script src="./app.js" type="text/javascript"></script>
+</body>
+</html>
