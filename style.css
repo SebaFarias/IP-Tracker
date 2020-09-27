@@ -77,13 +77,14 @@ h1{
 ********************************/
 .info{
     position: absolute;
-    bottom: -158px;
+    top: 167px;
     left: 50%;
     transform: translateX(-50%);
     width: 327px;
     padding: 22px;
     background: #FFFFFF;
     border-radius: 1rem;
+    z-index: 1;
 }
 h2{
     font-weight: bold;
@@ -111,7 +112,6 @@ h3{
 .map{
     width: 100vw;
     height: 80vh;
-    z-index: -1;
 }
 /********************************
 *
