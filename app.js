@@ -26,11 +26,11 @@ const handleSubmit = e => {
         }
     }
 }
-const fetchLocation = ipToFind => {
+const fetchLocation = async ipToFind => {
     let paramName = ''
     if(ipRegExp.test(ipToFind)) paramName ='&ipAddress='
     if(domainRegExp.test(ipToFind)) paramName = '&domain='    
-    fetch(`${API_URL}?apiKey=${IP_API_KEY}${paramName}${ipToFind}`).then( res => {
+    await fetch(`${API_URL}?apiKey=${IP_API_KEY}${paramName}${ipToFind}`).then( res => {
         if(res.ok) return res.json()
         else throw Error(res.status)
     }).then( data => {
