@@ -54,7 +54,7 @@ const refreshMap = (lon,lat) =>{
         center: [lon,lat], 
         zoom: 13 
     })    
-    let marker = new mapboxgl.Marker({
+    new mapboxgl.Marker({
         element: createMarker(),
         anchor: 'bottom'
     })
